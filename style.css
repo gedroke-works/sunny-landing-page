@@ -10,6 +10,8 @@
     background-image: url("images/desktop/image-header.jpg");
     background-position: center bottom;
     background-size:cover;
+    display:flex;
+    flex-direction: column;
 }
 .header {
     display: flex;
@@ -28,6 +30,7 @@
 }
 .menu span {
     margin-right:30px;
+    cursor:pointer;
 }
 .contact {
     background-color: white;
@@ -40,4 +43,19 @@
 }
 .contact:hover {
     background-color: antiquewhite;
+}
+
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items: center; /*Horizontal*/
+    justify-content: center; /*Vertical*/
+    font-size: 60px;
+    flex-grow:1;
+    font-weight:bold;
+    color:white;
+    
+}
+.arrow {
+    margin-top:50px;
 }
