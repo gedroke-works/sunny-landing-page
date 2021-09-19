@@ -23,6 +23,10 @@
     height:60px;
     padding: 0 20px;
 }
+.header .filter {
+    filter: invert(100%) sepia(0%) saturate(7500%)
+     hue-rotate(346deg) brightness(101%) contrast(102%);
+}
 .menu {
     display:flex;
     align-items: center; /*Vertical*/
@@ -121,7 +125,6 @@
     color:#A0A1A2;
     font-size: 22px;
     font-weight: bold;
-
 }
 .clients {
     display: flex;
@@ -139,8 +142,6 @@
 .client:first-child {
     margin:0;
 }
-
-
 
 .client-image {
    height: 70px; 
@@ -162,7 +163,6 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-
 }
 
 .author h1 {
@@ -171,5 +171,50 @@
 .author p {
     color: #A0A1A2;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.section4 {
+    display: flex;
+}
+.section4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex:0.25;
+}
+
+footer {
+    background-color:#90D4C5;
+    height:400px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+}
+.footer-container .logo {
+    margin-top: 70px;
+}
+.footer-container .footer-items {
+    color:#5A9E8F;
+    margin-top:50px;
+    font-weight: bold;
+}
+
+.footer-container .footer-items span {
+    padding:12px;
+}
+
+.footer-container .logo .filter {
+    filter: invert(40%) sepia(9%)
+     saturate(2270%) hue-rotate(118deg)
+     brightness(93%) contrast(93%);  
+}
+
+.footer-container .social {
+    margin-top: 60px;
+}
+.footer-container .social img {
+    padding:10px;
 }
