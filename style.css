@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.body {
+    font-size: 18px;  
+}
 
 .banner {
-    background-color: blue;
-    height: 100vh; 
+    min-height:600px;
+    height: 80vh; 
     background-image: url("images/desktop/image-header.jpg");
     background-position: center bottom;
     background-size:cover;
@@ -54,8 +57,119 @@
     flex-grow:1;
     font-weight:bold;
     color:white;
-    
 }
 .arrow {
     margin-top:50px;
+}
+
+.section1, .section2 {
+    display: flex;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section1 .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1 .text-container {
+    width: 70%;
+}
+.section1 .text-container img {
+    display: flex;
+}
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    
+}
+.left p {
+    color: #848391;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.left .button {
+    display: flex;
+    margin-top:30px;
+}
+.left div img {
+    width:150px;
+}
+.left, .right {
+    flex:1;
+}
+.left img, .right img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 100px;
+    letter-spacing: 1px;
+}
+.testimonials h1 {
+    color:#A0A1A2;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top:70px;
+    padding: 0 40px;
+}
+.clients .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    flex:0.3;
+}
+.client:first-child {
+    margin:0;
+}
+
+
+
+.client-image {
+   height: 70px; 
+   margin-bottom: 50px;
+}
+.client-image img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-feedback {
+    margin-bottom: 70px;
+    text-align: center;
+    flex:1;
+    color: #848391;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+
+.author h1 {
+    color: black;
+}
+.author p {
+    color: #A0A1A2;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
